@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uhka Karte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body class="uhka-card">
+    <div class="card">
+        <h2>Uhka!</h2>
+        <p id="uhka-text">Hier wird dein zufälliger Text angezeigt!</p>
+    </div>
+    <script>
+        const texts = [
+            "Ziehe 2 Karten.",
+            "Ziehe 4 Karten.",
+            "Ziehe 6 Karten.",
+            "Du musst für 1 Runde aussetzen.",
+            "Du musst für 2 Runde aussetzen.",
+            "Du musst für 3 Runde aussetzen.",
+            "Du musst allen deine Karten zeigen",
+            "Alle Spieler müssen 2 Karten aufnehmen.",
+            "Alle Spieler müssen 4 Karten aufnehmen.",
+            "Alle Spieler müssen 6 Karten aufnehmen.",
+            "Der Spieler auf deiner rechten Seite nimmt 2 Karten auf.",
+            "Der Spieler auf deiner rechten Seite nimmt 4 Karten auf.",
+            "Der Spieler auf deiner rechten Seite nimmt 6 Karten auf.",
+            "Der Spieler auf deiner linken Seite nimmt 2 Karten auf.",
+            "Der Spieler auf deiner linken Seite nimmt 4 Karten auf.",
+            "Der Spieler auf deiner linken Seite nimmt 6 Karten auf.",
+            "Alle Spieler zeigen dir ihre Karten.",
+            "Der Spieler auf deiner rechten Seite zeigt dir seine Karten.",
+            "Der Spieler auf deiner linken Seite zeigt dir seine Karten.",
+            "Du entscheidest wer 2 Karten aufnehmen muss",
+            "Du entscheidest wer 4 Karten aufnehmen muss",
+            "Du entscheidest wer 6 Karten aufnehmen muss",
+            "Du entscheidest wer dir die Karten zeigen muss",
+            "Tausche mit dem Spieler auf deiner rechten Seite die Karten",
+            "Tausche mit dem Spieler auf deiner linken Seite die Karten",
+            "Tausche mit einem Spieler deiner Wahl die Karten",
+            "Verteile 4 Karten an die anderen Spieler",
+            "Verteile 6 Karten an die anderen Spieler",
+            "Verteile 8 Karten an die anderen Spieler"
+        ];
+        document.getElementById('uhka-text').innerText = texts[Math.floor(Math.random() * texts.length)];
+    </script>
+</body>
+</html>

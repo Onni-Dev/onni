@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onni Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body class="onni-games">
+    <div class="container">
+        <h1 class="text-white">Willkommen bei Onni Games!</h1>
+        <p class="text-white">Scanne einen QR-Code, um zu starten.</p>
+        <button onclick="simulateScan()">QR-Code scannen</button>
+    </div>
+    <script>
+        function simulateScan() {
+            const isOnni = Math.random() > 0.5;
+            window.location.href = isOnni ? 'onni.html' : 'uhka.html';
+        }
+    </script>
+</body>
+</html>

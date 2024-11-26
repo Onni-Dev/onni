@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox verwenden */
+    justify-content: center; /* Horizontal zentrieren */
+    align-items: center; /* Vertikal zentrieren */
+    height: 100vh; /* Höhe des gesamten Bildschirms */
+}
+
+/* Spezifische Farben für jede Seite */
+body.onni-games {
+    background-color: #313131; /* Onni Games */
+}
+
+body.onni-card {
+    background-color: #4df1f1; /* Onni Karte */
+}
+
+body.uhka-card {
+    background-color: #ec55ad; /* Uhka Karte */
+}
+
+.container {
+    margin-top: 50px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff0000;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a30606;
+}
+
+.card {
+    width: 63mm; /* Breite einer echten Karte */
+    height: 88mm; /* Höhe einer echten Karte */
+    background-color: #ffffff; /* Weißer Hintergrund */
+    border: 1px solid #000; /* Schwarzer Rahmen */
+    border-radius: 8px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
+    display: flex; /* Flexbox für Inhalt */
+    flex-direction: column; /* Inhalt vertikal anordnen */
+    justify-content: center; /* Inhalt vertikal zentrieren */
+    align-items: center; /* Inhalt horizontal zentrieren */
+    text-align: center; /* Text zentrieren */
+    padding: 10px; /* Innenabstand */
+}
+
+.card h2 {
+    margin: 0;
+    color: #333;
+}
+
+.text-white {
+    color: white;
+}
+
