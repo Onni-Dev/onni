@@ -5,17 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Onni Games Startseite</title>
   <link rel="stylesheet" href="style.css">
-  <script>
-    // Funktion, die mit 50/50-Chance zu einer der beiden Karten führt
-    function randomRedirect() {
-      const randomNumber = Math.random(); // Gibt eine Zahl zwischen 0 und 1 zurück
-      if (randomNumber < 0.5) {
-        window.location.href = 'onni.html'; // Weiterleitung zu Onni Karten
-      } else {
-        window.location.href = 'uhka.html'; // Weiterleitung zu Uhka Karten
+  <body>
+    <div class="start-page">
+      <div class="container">
+        <h1>Willkommen bei <span class="highlight">Onni Games</span>!</h1>
+        
+        <!-- Beschreibung -->
+        <div class="description">
+            <p>SKlicke auf den Button, um zu starten:</p>
+        </div>
+
+        <!-- QR-Code Scan Button -->
+        <button onclick="randomRedirect()" class="btn-red">QR-Code Scannen</button>
+    </div>
+    <script>
+      // Funktion, die mit 50/50-Chance zu einer der beiden Karten führt
+      function randomRedirect() {
+        const randomNumber = Math.random(); // Gibt eine Zahl zwischen 0 und 1 zurück
+        if (randomNumber < 0.5) {
+          window.location.href = 'onni.html'; // Weiterleitung zu Onni Karten
+        } else {
+          window.location.href = 'uhka.html'; // Weiterleitung zu Uhka Karten
+        }
       }
-    }
-  </script>
+    </script>
+</body>
 </head>
 <body class="start-page">
   <div class="container">
