@@ -11,7 +11,6 @@
     <h2>Onni Karte</h2>
     <p id="onni-text">Hier wird dein zufälliger Text angezeigt!</p>
   </div>
-
   <script>
     const onniTexts = [
       "Alle Spieler müssen 2 Karten aufnehmen.",
@@ -35,7 +34,6 @@
       "Verteile 6 Karten an die anderen Spieler",
       "Verteile 8 Karten an die anderen Spieler"
     ];
-
     const randomOnniIndex = Math.floor(Math.random() * onniTexts.length);
     document.getElementById('onni-text').innerText = onniTexts[randomOnniIndex];
   </script>

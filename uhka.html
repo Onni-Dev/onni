@@ -11,7 +11,6 @@
     <h2>Uhka Karte</h2>
     <p id="uhka-text">Hier wird dein zufälliger Text angezeigt!</p>
   </div>
-
   <script>
     const positiveTexts = [
       "Alle Spieler müssen 2 Karten aufnehmen.",
@@ -35,7 +34,6 @@
       "Verteile 6 Karten an die anderen Spieler",
       "Verteile 8 Karten an die anderen Spieler"
     ];
-
     const negativeTexts = [
       "Ziehe 2 Karten.",
       "Ziehe 4 Karten.",
@@ -47,13 +45,10 @@
       "Tausche mit dem Spieler auf deiner rechten Seite die Karten",
       "Tausche mit dem Spieler auf deiner linken Seite die Karten"
     ];
-
     const texts = [...positiveTexts, ...negativeTexts];
     const randomIndex = Math.floor(Math.random() * texts.length);
     const selectedText = texts[randomIndex];
-
     document.getElementById('uhka-text').innerText = selectedText;
-
     if (positiveTexts.includes(selectedText)) {
       document.body.className = 'uhka-card-positive';
       document.querySelector('.card').className = 'card positive';
