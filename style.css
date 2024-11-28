@@ -132,3 +132,21 @@ button {
 button:hover {
   background-color: #c53030; /* Dunkleres Rot bei Hover */
 }
+
+/* Inhalt der Seite */
+.content {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Horizontale Zentrierung */
+  align-items: center;     /* Vertikale Zentrierung */
+  flex-direction: column;  /* Inhalt vertikal anordnen */
+}
+/* Flexbox für vollständige Zentrierung der Karte */
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Karten immer im vertikalen Mittelpunkt */
+}
