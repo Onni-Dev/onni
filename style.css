@@ -1,118 +1,151 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  /* Hintergrundfarbe für positive Uhka Karten */
-  body.uhka-card-positive {
-    background-color: #d9f6dc; /* Sanftes Grün */
-  }
-  
-  /* Hintergrundfarbe für negative Uhka Karten */
-  body.uhka-card-negative {
-    background-color: #f9d6db; /* Sanftes Rot */
-  }
-  
-  /* Stil der Karte */
-  .card {
-    width: 63mm;
-    height: 88mm;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #000;
-  }
-  
-  /* Farbe für positive Karten */
-  .card.positive {
-    background-color: #b5e7b5; /* Kräftiges Grün */
-    color: #000;
-  }
-  
-  /* Farbe für negative Karten */
-  .card.negative {
-    background-color: #f4b2b2; /* Kräftiges Rot */
-    color: #000;
-  }
-  
-  /* Textformatierung */
-  .card h2 {
-    margin: 0;
-    font-size: 1.5em;
-  }
-  
-  .card p {
-    margin: 10px 0 0;
-    font-size: 1em;
-  }
-  /* Allgemeine Stile */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  /* Hintergrundfarbe für Onni Karten */
-  body.onni-card {
-    background-color: #d8eefe; /* Sanftes Blau für den Hintergrund */
-  }
-  
-  /* Stil der Karte */
-  .card {
-    width: 63mm;
-    height: 88mm;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #000;
-  }
-  
-  /* Spezifikationen für Onni Karten */
-  .card.onni {
-    background-color: #b2d4f9; /* Kräftigeres Blau für die Karte */
-    color: #000;
-  }
-  
-  /* Textformatierung */
-  .card h2 {
-    margin: 0;
-    font-size: 1.5em;
-  }
-  
-  .card p {
-    margin: 10px 0 0;
-    font-size: 1em;
-  }
 /* Allgemeine Stile */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-  }
-  
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Hintergrundfarbe für positive Uhka Karten */
+body.uhka-card-positive {
+  background-color: #d9f6dc; /* Sanftes Grün */
+}
+
+/* Hintergrundfarbe für negative Uhka Karten */
+body.uhka-card-negative {
+  background-color: #f9d6db; /* Sanftes Rot */
+}
+
+/* Stil der Karte */
+.card {
+  width: 63mm;
+  height: 88mm;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+/* Farbe für positive Karten */
+.card.positive {
+  background-color: #b5e7b5; /* Kräftiges Grün */
+  color: #000;
+}
+
+/* Farbe für negative Karten */
+.card.negative {
+  background-color: #f4b2b2; /* Kräftiges Rot */
+  color: #000;
+}
+
+/* Textformatierung */
+.card h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.card p {
+  margin: 10px 0 0;
+  font-size: 1em;
+}
+
+/* Hintergrundfarbe für Onni Karten */
+body.onni-card {
+  background-color: #d8eefe; /* Sanftes Blau für den Hintergrund */
+}
+
+/* Stil der Karte */
+.card {
+  width: 63mm;
+  height: 88mm;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+/* Spezifikationen für Onni Karten */
+.card.onni {
+  background-color: #b2d4f9; /* Kräftigeres Blau für die Karte */
+  color: #000;
+}
+
+/* Textformatierung */
+.card h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.card p {
+  margin: 10px 0 0;
+  font-size: 1em;
+}
+
+/* Stil für die Startseite */
+.main-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Titelbereich */
+.title h1 {
+  font-size: 3em;
+  color: #333;
+}
+
+.title h2 {
+  font-size: 2em;
+  color: #777;
+}
+
+/* Beschreibung unter dem Titel */
+.description p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* QR-Code Button */
+.scan-button {
+  background-color: #FF6347; /* Tomatenrot für den Button */
+  color: #fff;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.scan-button:hover {
+  background-color: #FF4500; /* Etwas dunkleres Rot beim Hover */
+}
+
+/* Allgemeine Stile für das Layout der Seite */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
