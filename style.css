@@ -95,50 +95,7 @@ body.onni-card {
   font-size: 1em;
 }
 
-/* Stil für die Startseite */
-.main-container {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Titelbereich */
-.title h1 {
-  font-size: 3em;
-  color: #333;
-}
-
-.title h2 {
-  font-size: 2em;
-  color: #777;
-}
-
-/* Beschreibung unter dem Titel */
-.description p {
-  font-size: 1.2em;
-  color: #333;
-}
-
-/* QR-Code Button */
-.scan-button {
-  background-color: #FF6347; /* Tomatenrot für den Button */
-  color: #fff;
-  font-size: 1.2em;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
-}
-
-.scan-button:hover {
-  background-color: #FF4500; /* Etwas dunkleres Rot beim Hover */
-}
-
-/* Allgemeine Stile für das Layout der Seite */
+/* Allgemeine Stile */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -148,4 +105,47 @@ body {
   align-items: center;
   height: 100vh;
   text-align: center;
+}
+
+/* Hintergrundfarbe für die Startseite */
+body.start-page {
+  background-color: #2d2d2d; /* Dunkleres Grau */
+  color: #fff; /* Weißer Text */
+}
+
+/* Container für den Inhalt */
+.container {
+  max-width: 600px;
+  padding: 20px;
+}
+
+/* Titelhervorhebung */
+.highlight {
+  color: #ff0000; /* Rot für das Wort "Onni" */
+}
+
+/* Rote Buttons */
+.btn-red {
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover-Effekt für die Buttons */
+.btn-red:hover {
+  background-color: #cc0000; /* Dunkleres Rot beim Hover */
+}
+
+/* Zusätzlicher Text */
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }

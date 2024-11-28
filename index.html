@@ -1,34 +1,18 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Onni Games</title>
-  <link rel="stylesheet" href="style.css"> <!-- Verlinkung zur style.css -->
+  <title>Onni Games Startseite</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="main-container">
-    <!-- Titelbereich -->
-    <div class="title">
-      <h1>Onni</h1>
-      <h2>Games</h2>
-    </div>
-
-    <!-- Beschreibung -->
-    <div class="description">
-      <p>Starte das Spiel, indem du einen QR-Code scannst!</p>
-    </div>
-
-    <!-- QR-Code Scannen Button -->
-    <button class="scan-button" onclick="handleScanClick()">QR-Code Scannen</button>
-
-    <!-- Platz für die Spielmodus Auswahl oder Regeln, wenn benötigt -->
-    <div id="game-content" style="display:none;">
-      <!-- Hier erscheint entweder die Onni- oder Uhka-Seite -->
-    </div>
-
+<body class="start-page">
+  <div class="container">
+    <h1>Willkommen bei <span class="highlight">Onni Games</span>!</h1>
+    <p>Wähle eine Option, um zu starten:</p>
+    <button onclick="location.href='onni.html'" class="btn-red">Zu den Onni Karten</button>
+    <button onclick="location.href='uhka.html'" class="btn-red">Zu den Uhka Karten</button>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
