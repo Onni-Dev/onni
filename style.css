@@ -3,64 +3,159 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    display: flex; /* Flexbox verwenden */
-    justify-content: center; /* Horizontal zentrieren */
-    align-items: center; /* Vertikal zentrieren */
-    height: 100vh; /* Höhe des gesamten Bildschirms */
-}
-
-/* Spezifische Farben für jede Seite */
-body.onni-games {
-    background-color: #313131; /* Onni Games */
-}
-
-body.onni-card {
-    background-color: #4df1f1; /* Onni Karte */
-}
-
-body.uhka-card {
-    background-color: #ec55ad; /* Uhka Karte */
-}
-
-.container {
-    margin-top: 50px;
-}
-
-button {
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: #ff0000;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #a30606;
-}
-
-.card {
-    width: 63mm; /* Breite einer echten Karte */
-    height: 88mm; /* Höhe einer echten Karte */
-    background-color: #ffffff; /* Weißer Hintergrund */
-    border: 1px solid #000; /* Schwarzer Rahmen */
-    border-radius: 8px; /* Abgerundete Ecken */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
-    display: flex; /* Flexbox für Inhalt */
-    flex-direction: column; /* Inhalt vertikal anordnen */
-    justify-content: center; /* Inhalt vertikal zentrieren */
-    align-items: center; /* Inhalt horizontal zentrieren */
-    text-align: center; /* Text zentrieren */
-    padding: 10px; /* Innenabstand */
-}
-
-.card h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Hintergrundfarbe für positive Uhka Karten */
+  body.uhka-card-positive {
+    background-color: #d9f6dc; /* Sanftes Grün */
+  }
+  
+  /* Hintergrundfarbe für negative Uhka Karten */
+  body.uhka-card-negative {
+    background-color: #f9d6db; /* Sanftes Rot */
+  }
+  
+  /* Stil der Karte */
+  .card {
+    width: 63mm;
+    height: 88mm;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #000;
+  }
+  
+  /* Farbe für positive Karten */
+  .card.positive {
+    background-color: #b5e7b5; /* Kräftiges Grün */
+    color: #000;
+  }
+  
+  /* Farbe für negative Karten */
+  .card.negative {
+    background-color: #f4b2b2; /* Kräftiges Rot */
+    color: #000;
+  }
+  
+  /* Textformatierung */
+  .card h2 {
     margin: 0;
-    color: #333;
-}
-
-.text-white {
-    color: white;
-}
-
+    font-size: 1.5em;
+  }
+  
+  .card p {
+    margin: 10px 0 0;
+    font-size: 1em;
+  }
+  /* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Hintergrundfarbe für Onni Karten */
+  body.onni-card {
+    background-color: #d8eefe; /* Sanftes Blau für den Hintergrund */
+  }
+  
+  /* Stil der Karte */
+  .card {
+    width: 63mm;
+    height: 88mm;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #000;
+  }
+  
+  /* Spezifikationen für Onni Karten */
+  .card.onni {
+    background-color: #b2d4f9; /* Kräftigeres Blau für die Karte */
+    color: #000;
+  }
+  
+  /* Textformatierung */
+  .card h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .card p {
+    margin: 10px 0 0;
+    font-size: 1em;
+  }
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  /* Hintergrundfarbe für die Startseite */
+  body.start-page {
+    background-color: #2d2d2d; /* Dunkleres Grau */
+    color: #fff; /* Weißer Text */
+  }
+  
+  /* Container für den Inhalt */
+  .container {
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  /* Titelhervorhebung */
+  .highlight {
+    color: #ff0000; /* Rot für das Wort "Onni" */
+  }
+  
+  /* Rote Buttons */
+  .btn-red {
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover-Effekt für die Buttons */
+  .btn-red:hover {
+    background-color: #cc0000; /* Dunkleres Rot beim Hover */
+  }
+  
+  /* Zusätzlicher Text */
+  p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+    

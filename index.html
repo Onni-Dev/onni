@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onni Games</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onni Games Startseite</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Funktion, die mit 50/50-Chance zu einer der beiden Karten führt
+    function randomRedirect() {
+      const randomNumber = Math.random(); // Gibt eine Zahl zwischen 0 und 1 zurück
+      if (randomNumber < 0.5) {
+        window.location.href = 'onni.html'; // Weiterleitung zu Onni Karten
+      } else {
+        window.location.href = 'uhka.html'; // Weiterleitung zu Uhka Karten
+      }
+    }
+  </script>
 </head>
-<body>
-    <body class="onni-games">
-    <div class="container">
-        <h1 class="text-white">Willkommen bei Onni Games!</h1>
-        <p class="text-white">Scanne einen QR-Code, um zu starten.</p>
-        <button onclick="simulateScan()">QR-Code scannen</button>
-    </div>
-    <script>
-        function simulateScan() {
-            const isOnni = Math.random() > 0.5;
-            window.location.href = isOnni ? 'onni.html' : 'uhka.html';
-        }
-    </script>
+<body class="start-page">
+  <div class="container">
+    <h1>Willkommen bei <span class="highlight">Onni Games</span>!</h1>
+    <p>Klicke auf den Button, um zu starten:</p>
+    <button onclick="randomRedirect()" class="btn-red">QR-Code Scannen</button>
+  </div>
 </body>
 </html>
