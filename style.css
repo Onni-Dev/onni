@@ -95,65 +95,40 @@ body.onni-card {
   font-size: 1em;
 }
 
-/* Allgemeine Stile */
+/* Allgemeine Stile für die Startseite */
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #F0F0F0; /* Sanftes Grau als Hintergrund */
-}
-
-/* Startseite Layout */
-.main-container {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff; /* Weißer Hintergrund für den Inhalt */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #2d3748; /* Dunkles Grau für den Hintergrund */
 }
 
-/* Titel Bereich */
-.title h1 {
-  font-size: 4em; /* Größerer Titel */
-  color: #1a73e8; /* Blau für Onni */
-  margin: 0;
+/* Header - "Onni Games" */
+header {
+  color: #e53e3e; /* Rotes Onni Games */
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.title h2 {
-  font-size: 2.5em; /* Etwas kleineres 'Games' */
-  color: #555;
-  margin: 0;
-}
-
-/* Beschreibung */
-.description p {
-  font-size: 1.2em;
-  color: #333;
-  margin-top: 10px;
-}
-
-/* QR-Code Button */
-.scan-button {
-  background-color: #FF6347; /* Tomatenrot für den Button */
-  color: #fff;
-  font-size: 1.2em;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+/* Stil der Buttons auf der Startseite */
+button {
+  background-color: #e53e3e; /* Rotes Dunkel für den Button */
+  color: white;
+  font-size: 1.5em;
+  padding: 20px 50px;
   margin-top: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.scan-button:hover {
-  background-color: #FF4500; /* Etwas dunkleres Rot beim Hover */
+button:hover {
+  background-color: #c53030; /* Dunkleres Rot bei Hover */
 }
